@@ -28,13 +28,52 @@ h1 {
   font-style: normal;
 }
 
+.h-130 {
+  height: 100vh;
+  z-index:-1;
+}
+
 .h15vh {
   /*height: 150vh;*/
 }
 
 @media screen and (max-width: 480px) {
   /* Your styles for small phones here */
-  .h15vh {
-   /*height: 200vh;*/
+  .h-130 {
+    height: 130vh!important;
+    z-index:-1;
   }
+
+  .temas {
+    line-height: 30px;
+    font-size: 6vw;
+  }
+}
+
+
+ul#temas span:nth-child(even) {
+  color:rgb(239 68 68); /* carrot */
+}
+
+ul#temas span:nth-child(odd) {
+  color: rgb(132 204 22);
+}
+
+.temas {
+    line-height: 50px;
+    font-size: 3vw;
+}
+
+.temas span:hover {
+  color:white!important;
+  cursor:pointer;
+}
+
+.blur::after {
+  content: "";
+  position: absolute;
+  /* Stretches the overlay to cover the entire container */
+  background-color: rgba(255, 255, 255, 0.2); /* White color with 20% opacity */
+  filter: blur(16px); /* Applies 16px blur effect (equivalent to backdrop-blur-lg) */
+  z-index: 1; /* Positions the overlay on top of the image */
 }
