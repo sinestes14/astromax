@@ -52,7 +52,7 @@ const {
 <style></style>
 <BaseLayout>
   <!--Taller/-->
-  <div class="pt-12"><img class="w-1/2 mx-auto pt-12" src={imgcover} /></div>
+  <div class="pt-12"><img class="w-full lg:w-1/2 mx-auto lg:pt-12" src={imgcover} /></div>
 
   <div class="mx-auto max-w-7xl border border-white/20 px-8 py-12 text-white">
     <h1 class="text-white mx-auto text-3xl">{tituloTaller}</h1>
@@ -60,12 +60,12 @@ const {
     <br />
     <div><h1 class="text-3xl">Contenido del Taller</h1></div>
     <p class="text-white mx-auto pt-6" set:html={contenido} />
-
-    <div class="grid grid-cols-3 gap-4 md:grid-cols-1">
-      {embed.map((youtube) => (
+ <div><h1 class="text-3xl">Ejemplos de FoxDot:</h1></div>
+    <div class="grid lg:grid-cols-3 gap-4 grid-cols-1">
+      {embed!.map((youtube) => (
           <iframe
             width="100%"
-            height="574"
+            height="474"
             src={youtube.video}
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
