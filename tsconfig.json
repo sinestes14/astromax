@@ -1,5 +1,12 @@
 {
   "compilerOptions": {
-    "moduleResolution": "node"
-  }
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+      
+    },
+    "allowSyntheticDefaultImports": true
+  },
+  
 }
