@@ -45,8 +45,8 @@ h1 {
   }
 
   .temas {
-    line-height: 30px;
-    font-size: 6vw;
+    line-height: 30px!important;
+    font-size: 6vw!important;
   }
 }
 

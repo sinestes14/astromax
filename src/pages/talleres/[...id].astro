@@ -1,0 +1,30 @@
+---
+import data from "../../content/data.json"
+import BaseLayout from '../../layouts/BaseLayout.astro'
+import "@/styles/global.css" 
+
+export async function getStaticPaths() {
+
+const talleres = data.talleres;
+  return talleres.map(({ id, imgcover, tituloTaller,year, description, link, img1 }) => {
+  
+    return {
+      params: { id },
+      props: { id, imgcover, tituloTaller,year, description, link, img1}
+    };
+  });
+}
+
+const { id  } = Astro.params;
+const {  imgcover, tituloTaller, year, description, link, img1 } = Astro.props;
+
+
+
+---
+
+<BaseLayout>
+<img class="w-full " src={imgcover}
+<div class="text-white">{tituloTaller}</div>
+<p set:html={description}></p>
+
+</BaseLayout>
