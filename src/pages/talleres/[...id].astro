@@ -47,6 +47,8 @@ const {
   img1,
   embed,
 } = Astro.props;
+
+//console.log(embed[0].video)
 ---
 
 <style></style>
@@ -66,7 +68,7 @@ const {
           <iframe
             width="100%"
             height="474"
-            src={embed[0].video}
+            src="https://www.youtube.com/embed/4IfgcHmQiDg"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
@@ -74,7 +76,7 @@ const {
           <iframe
             width="100%"
             height="474"
-            src={embed[1].video}
+            src="https://www.youtube.com/embed/DrCrBVWS-pE"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
@@ -82,7 +84,7 @@ const {
           <iframe
             width="100%"
             height="474"
-            src={embed[2].video}
+            src="https://www.youtube.com/embed/alOggvy1R8M"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
