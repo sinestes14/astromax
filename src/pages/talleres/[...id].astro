@@ -1,29 +1,47 @@
 ---
 import data from "../../content/data.json";
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import CTA from "../../components/landing/Cta.astro";
 import "@/styles/global.css";
 
 export async function getStaticPaths() {
   const talleres = data.talleres;
   return talleres.map(
-    ({ id, imgcover, tituloTaller, year, description, link, img1 }) => {
+    ({ id, imgcover, tituloTaller, year, description,contenido, link, img1 }) => {
       return {
         params: { id },
-        props: { id, imgcover, tituloTaller, year, description, link, img1 },
+        props: { id, imgcover, tituloTaller, year, description,contenido, link, img1 },
       };
     }
   );
 }
 
 const { id } = Astro.params;
-const { imgcover, tituloTaller, year, description, link, img1 } = Astro.props;
+const { imgcover, tituloTaller, year, description,contenido, link, img1 } = Astro.props;
 ---
+<style>
+h1 {
 
+}
+</style>
 <BaseLayout>
   <!--Taller/-->
   <div class="pt-12 "><img class="w-1/2 mx-auto pt-12" src={imgcover} /></div>
 
 <div class="mx-auto max-w-7xl border border-white/20 px-8 py-12 text-white">
   <h1 class="text-white mx-auto text-3xl">{tituloTaller}</h1>
-  <p class="text-white mx-auto pt-6" set:html={description}></p></div>
+  <p class="text-white mx-auto pt-6" set:html={description}></p>
+  <p class="text-white mx-auto pt-6" set:html={contenido}></p>
+  </div>
+
+<div class="bg-transparent duration-200 group">
+      <a
+        href="https://tienda.sinestesialab.xyz/buy/70ea82fd-773e-4553-b604-0694bd8cca00"
+        class="text-white text-center items-center w-full bg-red-500 duration-200 font-medium rounded-0 inline-flex justify-center lg:py-12 lg:text-6xl px-4 py-6 hover:rounded-full text-2xl uppercase"
+        ><h1>Inscribirme</h1></a
+      >
+    </div>
+
+
+  <CTA/>
 </BaseLayout>
