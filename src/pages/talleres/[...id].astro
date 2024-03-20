@@ -20,9 +20,6 @@ const { id } = Astro.params;
 const { imgcover, tituloTaller, year, description,contenido, link, img1 } = Astro.props;
 ---
 <style>
-h1 {
-
-}
 </style>
 <BaseLayout>
   <!--Taller/-->
@@ -31,15 +28,17 @@ h1 {
 <div class="mx-auto max-w-7xl border border-white/20 px-8 py-12 text-white">
   <h1 class="text-white mx-auto text-3xl">{tituloTaller}</h1>
   <p class="text-white mx-auto pt-6" set:html={description}></p>
+  <br>
+  <div><h1 class="text-3xl">Contenido del Taller</h1></div>
   <p class="text-white mx-auto pt-6" set:html={contenido}></p>
   </div>
 
 <div class="bg-transparent duration-200 group">
       <a
-        href="https://tienda.sinestesialab.xyz/buy/70ea82fd-773e-4553-b604-0694bd8cca00"
-        class="text-white text-center items-center w-full bg-red-500 duration-200 font-medium rounded-0 inline-flex justify-center lg:py-12 lg:text-6xl px-4 py-6 hover:rounded-full text-2xl uppercase"
+        href={link}
+        class="lemonsqueezy-button text-white text-center items-center w-full bg-red-500 duration-200 font-medium rounded-0 inline-flex justify-center lg:py-12 lg:text-6xl px-4 py-6 hover:rounded-full text-2xl uppercase"
         ><h1>Inscribirme</h1></a
-      >
+      ><script src="https://assets.lemonsqueezy.com/lemon.js" defer></script>
     </div>
 
 
