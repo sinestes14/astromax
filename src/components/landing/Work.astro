@@ -1,9 +1,9 @@
 ---
-/*import data from "../../content/data.json"
-const projects = data.projects*/
+import data from "../../content/data.json";
+import Banner from "../../components/landing/Banner.astro"
 ---
 
-<!--Banner/-->
+
 <section id="talleres" class="border-b border-white/20 border bg-accent-500">
   <div class="mx-auto max-w-7xl border-x border-white/20 px-8 py-12">
     <div class="mx-auto">
@@ -16,6 +16,7 @@ const projects = data.projects*/
         Transformá tu ARTE y EXPERIMENTÁ con el poder de las herramientas
         digitales abiertas
       </p>
+
       <div class="pt-6 mx-auto text-white">
         <p>Nuestros talleres cubren los siguientes temas:</p>
         <br />
@@ -29,6 +30,13 @@ const projects = data.projects*/
           <span> Realidad Virtual Web </span> · <span> Realidad Aumentada</span>
           · <span> Y más por anunciar</span>
         </ul>
+      </div>
+      <div class="pt-12"></div>
+            <Banner/>
+    <div class="justify-content">
+      {data.talleres.map((taller) => (
+      <a href={`/talleres/${taller.id}`}><img class="lg:w-1/2 w-full mx-auto" src={taller.imgcover}/></a>
+      ))}
       </div>
     </div>
   </div>
