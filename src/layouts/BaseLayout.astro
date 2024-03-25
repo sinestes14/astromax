@@ -4,13 +4,35 @@ import Navigation from "@/components/global/Navigation.astro";
 import Footer from "@/components/global/Footer.astro";
 ---
 
-<html lang="en" class="selection:bg-carrot selection:text-white">
+<html lang="en" class="selection:bg-carrot selection:text-white scroll-smooth" >
   <head>
-    <BaseHead />
+    <BaseHead/>
   </head>
   <body class="mx-auto 2xl:max-w-7xl">
+  <button onclick="topFunction()" id="b2top" title="Go to top" class="bg-red-700 hover:bg-red-600"><i class="fas fa-arrow-up text-3xl"></i></button>
     <Navigation />
     <slot />
     <Footer />
   </body>
+  <script is:inline>
+// Get the button
+let b2top = document.getElementById("b2top");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    b2top.style.display = "block";
+  } else {
+    b2top.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
 </html>

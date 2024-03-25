@@ -5,9 +5,7 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
 
 <BaseLayout>
 
-<section id="slider" class="section">
-      <div class="slider">
-        <div class="slider__container">
+
           <div class="slider__item">
             <img
               src="https://cdn.glitch.global/407d5fe6-b26a-4bd6-b52c-57dda82656b0/1.jpg"
@@ -37,63 +35,71 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
               width="100%"
             />
           </div>
-          <div class="slider__item">
+          <div class="text-white text-center p-8 ">
+          <h1 class="text-4xl">Proyectos Realizados</h1>
+          <br>
+          <p class="text-2xl">Estos son algunos de nuestros proyectos:</p>
+          </div>
+          <section class="splide section">
+      <div class="splide__track cursor-grab m-4">
+        <div class="splide__list">
+          <div class="splide__slide">
             <img
               src="https://cdn.glitch.global/407d5fe6-b26a-4bd6-b52c-57dda82656b0/7.jpg?v=1686626414811"
               loading="lazy"
               width="100%"
             />
           </div>
-          <div class="slider__item">
+          <div class="splide__slide">
             <img
               src="https://cdn.glitch.global/407d5fe6-b26a-4bd6-b52c-57dda82656b0/8.jpg?v=1686626414811"
               loading="lazy"
               width="100%"
             />
           </div>
-          <div class="slider__item">
+          <div class="splide__slide">
             <img
               src="https://cdn.glitch.global/407d5fe6-b26a-4bd6-b52c-57dda82656b0/9.jpg?v=1686626414811"
               loading="lazy"
               width="100%"
             />
           </div>
-          <div class="slider__item">
+          <div class="splide__slide">
             <img
               src="https://cdn.glitch.global/407d5fe6-b26a-4bd6-b52c-57dda82656b0/10.jpg?v=1686626414811"
               loading="lazy"
               width="100%"
             />
           </div>
-          <div class="slider__item">
+          <div class="splide__slide">
             <img
               src="https://cdn.glitch.global/407d5fe6-b26a-4bd6-b52c-57dda82656b0/11.jpg?v=1686626414811"
               loading="lazy"
               width="100%"
             />
           </div>
-          <div class="slider__item">
+          <div class="splide__slide">
             <img
               src="https://cdn.glitch.global/407d5fe6-b26a-4bd6-b52c-57dda82656b0/12.jpg?v=1686626414811"
               loading="lazy"
               width="100%"
             />
           </div>
-          <div class="slider__item">
+          <div class="splide__slide">
             <img
               src="https://cdn.glitch.global/407d5fe6-b26a-4bd6-b52c-57dda82656b0/13.jpg?v=1686626414811"
               loading="lazy"
               width="100%"
             />
           </div>
-          <div class="slider__item">
+          <div class="splide__slide">
             <img
               src="https://cdn.glitch.global/407d5fe6-b26a-4bd6-b52c-57dda82656b0/14.jpg?v=1686626414811"
               loading="lazy"
               width="100%"
             />
           </div>
-          <div class="slider__item">
+          <div class="splide__slide">
             <a href="index.html#taller">            <img
               src="https://cdn.glitch.global/407d5fe6-b26a-4bd6-b52c-57dda82656b0/15.jpg?v=1686626414811"
               loading="lazy"
@@ -104,5 +110,15 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
         </div>
       </div>
     </section>
+    <script is:inline
+  src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js"
+></script>
+    <script is:inline>
+    new Splide( '.splide',{
+  type    : 'loop',
+  autoplay: 'play',
+  perPage : 1,
+}  ).mount();
+    </script>
 </BaseLayout>
 
