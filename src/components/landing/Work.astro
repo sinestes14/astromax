@@ -35,11 +35,14 @@ import Banner from "../../components/landing/Banner.astro"
             <Banner/>
     <div class="justify-content">
       {data.talleres.map((taller) => (
-      <a href={`/talleres/${taller.id}`}><img class="group/edit lg:w-1/2 w-full mx-auto" src={taller.imgcover}/>
-      <span class="invisible group-hover/edit:visible text-white">¿De qué trata?</span>
+      <a href={`/talleres/${taller.id}`}><img class="group lg:w-1/2 w-full mx-auto" src={taller.imgcover}/>
+  <cta class="text-white text-center items-center w-full bg-red-600 duration-200 font-medium rounded-0 inline-flex justify-center lg:py-12 lg:text-6xl px-4 py-6 hover:rounded-full text-2xl uppercase">Detalles</cta>
       </a>
       ))}
       </div>
     </div>
   </div>
 </section>
+<script>
+
+</script>
