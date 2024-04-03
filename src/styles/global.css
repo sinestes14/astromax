@@ -98,7 +98,9 @@ ul#temas span:nth-child(odd) {
 
 }
 
-
+.splide__pagination__page {
+	background-color: #17ff00;
+}
 
 
 
