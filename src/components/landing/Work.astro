@@ -1,8 +1,13 @@
 ---
 import data from "../../content/data.json";
 import Banner from "../../components/landing/Banner.astro"
+/*import "../../styles/global.css";*/
 ---
-
+<style>
+.splide__pagination__page {
+	background-color: #17ff00;
+}
+</style>
 
 <section id="talleres" class="border-b border-white/20 border bg-accent-500">
   <div class="mx-auto max-w-7xl border-x border-white/20 px-8 py-12">
@@ -34,15 +39,34 @@ import Banner from "../../components/landing/Banner.astro"
       <div class="pt-12"></div>
             <Banner/>
     <div class="justify-content">
-      {data.talleres.map((taller) => (
+<section class="splide section">
+      <div class="splide__track cursor-grab m-4">
+        <div class="splide__list">
+        {data.talleres.map((taller) => (
+        <div class="splide__slide">
       <a href={`/talleres/${taller.id}`}><img class="group lg:w-1/2 w-full mx-auto" src={taller.imgcover}/>
   <cta class="text-white text-center items-center w-full bg-red-600 duration-200 font-medium rounded-0 inline-flex justify-center lg:py-12 lg:text-6xl px-4 py-6 hover:rounded-full text-2xl uppercase">Detalles</cta>
-      </a>
+      </a></div>
       ))}
+        </div>
+      </div>
+    </section>
+   
+
+
+      
       </div>
     </div>
   </div>
-</section>
-<script>
 
-</script>
+</section>
+ <script is:inline
+  src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js"
+></script>
+    <script is:inline>
+    new Splide( '.splide',{
+  type    : 'loop',
+  autoplay: 'play',
+  perPage : 1,
+}  ).mount();
+    </script>
