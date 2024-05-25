@@ -3,6 +3,7 @@ import data from "../../content/data.json";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import CTA from "../../components/landing/Cta.astro";
 import ctaTaller from "../../components/landing/ctaTaller.astro";
+import Testimonials from "../../components/landing/Testimonials.astro";
 import "@/styles/global.css";
 
 export async function getStaticPaths() {
@@ -101,7 +102,7 @@ const {
     </div-->
  <!--{embed[0].map((youtube) => ())}-->
   </div>
-
+<Testimonials/>
   <div class="bg-transparent duration-200 group">
     <a
       href={link}
