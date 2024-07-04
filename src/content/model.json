@@ -1,23 +1,53 @@
-{
-  ":name": "FrontAid CMS Example Model",
-  ":description": "This is a simple example of a FrontAid CMS model. You can change and extend it according to your needs, for example add new fields or restructure it. You can edit this file by cloning this repository and update it with your local editor and push it back into this Git repository. ",
-  "custom-field": {
-    ":description": "This example text is used as a description.",
-    ":type": "line"
-  },
-  "custom-object": {
-    "custom-line": {
-      ":type": "line"
-    },
-    "custom-text": {
-      ":type": "text"
-    }
-  },
-  "custom-list": {
+  {
+  ":name": "Talleres",
+  ":description": "Este modelo define la estructura de datos para los talleres de Sinestesia Lab. Incluye información sobre cada taller, como título, imágenes, enlaces, y contenido detallado.",
+  "talleres": {
     ":items": {
-      "custom-list-item": {
-        ":type": "line"
+      "tituloTaller": {
+        ":type": "line",
+        ":description": "El título del taller"
+      },
+      "id": {
+        ":type": "line",
+        ":description": "Identificador único del taller"
+      },
+      "imgcover": {
+        ":type": "line",
+        ":description": "URL de la imagen de portada del taller"
+      },
+      "img1": {
+        ":type": "line",
+        ":description": "URL de una imagen adicional del taller"
+      },
+      "link": {
+        ":type": "line",
+        ":description": "Enlace para inscribirse al taller"
+      },
+      "embed": {
+        ":items": {
+          "video": {
+            ":type": "line",
+            ":description": "URL de un video embebido relacionado con el taller"
+          }
+        }
+      },
+      "year": {
+        ":type": "line",
+        ":description": "Año en que se imparte el taller"
+      },
+      "description": {
+        ":type": "text",
+        ":description": "Descripción detallada del taller"
+      },
+      "horario": {
+        ":type": "text",
+        ":description": "Información sobre el horario del taller"
+      },
+      "contenido": {
+        ":type": "text",
+        ":description": "Contenido detallado o programa del taller"
       }
     }
   }
+}
 }
