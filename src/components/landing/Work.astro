@@ -44,7 +44,7 @@ import Banner from "../../components/landing/Banner.astro"
         <div class="splide__list">
         {data.talleres.map((taller) => (
         <div class="splide__slide">
-      <a href={`/talleres/${taller.id}`}><img class="group lg:w-1/2 w-full mx-auto" src={`https://ucarecdn.com/${imgcover.id}/`}/>
+      <a href={`/talleres/${taller.id}`}><img class="group lg:w-1/2 w-full mx-auto" src={`https://ucarecdn.com/${taller.imgcover.id}/`}/>
   
       </a></div>
       ))}
