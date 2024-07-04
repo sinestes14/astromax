@@ -8,7 +8,7 @@
         ":description": "El título del taller"
       },
       "id": {
-        ":type": "image",
+        ":type": "line",
         ":description": "Identificador único del taller"
       },
       "imgcover": {
@@ -16,7 +16,7 @@
         ":description": "URL de la imagen de portada del taller"
       },
       "img1": {
-        ":type": "line", ":richtext": true,
+        ":type": "image", 
         ":description": "URL de una imagen adicional del taller"
       },
       "link": {
