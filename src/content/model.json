@@ -8,11 +8,11 @@
         ":description": "El título del taller"
       },
       "id": {
-        ":type": "line",
+        ":type": "image",
         ":description": "Identificador único del taller"
       },
       "imgcover": {
-        ":type": "line", 
+        ":type": "image", 
         ":description": "URL de la imagen de portada del taller"
       },
       "img1": {
