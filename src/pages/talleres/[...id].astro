@@ -6,6 +6,11 @@ import Testimonials from "../../components/landing/Testimonials.astro";
 import "@/styles/global.css";
 
 // Function to fetch and parse CSV
+
+
+export async function getStaticPaths() {
+  const csvUrl = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRBYSVd7BhtRG7EjKg30A4xn7WJdTUWYHOjVyYfVBBzQMKwfBe2JOd1FWvcsobmxwhQP-JisU1w6jTv/pub?output=csv";
+
 async function fetchCSV(url) {
   const response = await fetch(url);
   const csvText = await response.text();
@@ -20,8 +25,6 @@ async function fetchCSV(url) {
   });
 }
 
-export async function getStaticPaths() {
-  const csvUrl = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRBYSVd7BhtRG7EjKg30A4xn7WJdTUWYHOjVyYfVBBzQMKwfBe2JOd1FWvcsobmxwhQP-JisU1w6jTv/pub?output=csv";
   const talleres = await fetchCSV(csvUrl);
   
   return talleres.map(({
