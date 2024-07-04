@@ -1,0 +1,108 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import CTA from "../../components/landing/Cta.astro";
+import ctaTaller from "../../components/landing/ctaTaller.astro";
+import Testimonials from "../../components/landing/Testimonials.astro";
+import "@/styles/global.css";
+
+// Function to fetch and parse CSV
+async function fetchCSV(url) {
+  const response = await fetch(url);
+  const csvText = await response.text();
+  const lines = csvText.split('\n');
+  const headers = lines[0].split(',');
+  return lines.slice(1).map(line => {
+    const values = line.split(',');
+    return headers.reduce((obj, header, index) => {
+      obj[header.trim()] = values[index]?.trim();
+      return obj;
+    }, {});
+  });
+}
+
+export async function getStaticPaths() {
+  const csvUrl = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRBYSVd7BhtRG7EjKg30A4xn7WJdTUWYHOjVyYfVBBzQMKwfBe2JOd1FWvcsobmxwhQP-JisU1w6jTv/pub?output=csv";
+  const talleres = await fetchCSV(csvUrl);
+  
+  return talleres.map(({
+    id,
+    imgcover,
+    tituloTaller,
+    year,
+    description,
+    contenido,
+    link,
+    img1,
+    embed,
+  }) => {
+    return {
+      params: { id },
+      props: {
+        id,
+        imgcover,
+        tituloTaller,
+        year,
+        description,
+        contenido,
+        link,
+        img1,
+        embed,
+      },
+    };
+  });
+}
+
+const { id } = Astro.params;
+const {
+  imgcover,
+  tituloTaller,
+  year,
+  description,
+  contenido,
+  link,
+  img1,
+  embed,
+} = Astro.props;
+---
+
+<style>
+  /* Your styles here */
+</style>
+
+<BaseLayout>
+  <div class="pt-12">
+    <img class="w-full lg:w-1/2 mx-auto lg:pt-12" src={imgcover} />
+  </div>
+  <ctaTaller link={link}/>
+  <div class="bg-transparent duration-200 group">
+    <a
+      href={link}
+      class="lemonsqueezy-button text-white text-center items-center w-full bg-red-500 duration-200 font-medium rounded-0 inline-flex justify-center lg:py-12 lg:text-6xl px-4 py-6 hover:rounded-full text-2xl uppercase"
+    >
+      <h1>Inscribirme</h1>
+    </a>
+    <script src="https://assets.lemonsqueezy.com/lemon.js" defer></script>
+  </div>
+  <div class="mx-auto max-w-7xl border border-white/20 px-8 py-12 text-white">
+    <h1 class="text-white mx-auto text-3xl">{tituloTaller}</h1>
+    <p class="text-white mx-auto pt-6" set:html={description} />
+    <br />
+    <img src="https://sinestesialab.xyz/4.webp" class="w-full lg:w-1/2" />
+    <br />
+    <div><h1 class="text-3xl pt-12">Tema por Sesión</h1></div>
+    <p class="text-white mx-auto pt-6" set:html={contenido} />
+  </div>
+  <Testimonials/>
+  <div class="bg-transparent duration-200 group">
+    <a
+      href={link}
+      class="lemonsqueezy-button text-white text-center items-center w-full bg-red-500 duration-200 font-medium rounded-0 inline-flex justify-center lg:py-12 lg:text-6xl px-4 py-6 hover:rounded-full text-2xl uppercase"
+    >
+      <h1>Inscribirme</h1>
+    </a>
+    <script src="https://assets.lemonsqueezy.com/lemon.js" defer></script>
+  </div>
+  <CTA />
+  <script>window.lemonSqueezyAffiliateConfig = { store: "sinestesia" };</script>
+  <script src="https://lmsqueezy.com/affiliate.js" defer></script>
+</BaseLayout>
