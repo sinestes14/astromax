@@ -20,6 +20,7 @@ async function fetchCSV(url) {
     const values = line.split(',');
     return headers.reduce((obj, header, index) => {
       obj[header.trim()] = values[index]?.trim();
+console.log(obj)
       return obj;
     }, {});
   });
