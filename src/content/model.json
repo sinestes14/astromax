@@ -12,11 +12,11 @@
         ":description": "Identificador único del taller"
       },
       "imgcover": {
-        ":type": "line",
+        ":type": "line", 
         ":description": "URL de la imagen de portada del taller"
       },
       "img1": {
-        ":type": "line",
+        ":type": "line", ":richtext": true,
         ":description": "URL de una imagen adicional del taller"
       },
       "link": {
@@ -36,15 +36,15 @@
         ":description": "Año en que se imparte el taller"
       },
       "description": {
-        ":type": "text",
+        ":type": "text", ":richtext": true,
         ":description": "Descripción detallada del taller"
       },
       "horario": {
-        ":type": "text",
+        ":type": "text", ":richtext": true,
         ":description": "Información sobre el horario del taller"
       },
       "contenido": {
-        ":type": "text",
+        ":type": "text", ":richtext": true,
         ":description": "Contenido detallado o programa del taller"
       }
     }
