@@ -42,7 +42,14 @@ import Banner from "../../components/landing/Banner.astro"
             <Banner/>
     <div class="justify-content">
 <section class="splide section">
-<div class="splide__arrows"></div>
+<div class="splide__arrows">
+		<button class="splide__arrow splide__arrow--prev">
+			<
+		</button>
+		<button class="splide__arrow splide__arrow--next">
+			>
+		</button>
+</div>
       <div class="splide__track cursor-grab m-4">
         <div class="splide__list">
         {data.talleres.map((taller) => (
