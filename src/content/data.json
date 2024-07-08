@@ -1,6 +1,20 @@
 {
   "talleres": [
     {
+      "tituloTaller": "Fantasía Digital(IA): Animaciones, Profundidades y Cuerpos Sintéticos",
+      "id": "3dai",
+      "imgcover": {
+        "provider": "uploadcare",
+        "type": "image",
+        "id": "cfd3fea5-6bec-47ca-a2d0-ad9b260d4e6a",
+        "height": 800,
+        "width": 800
+      },
+      "description": "<h2><strong>Lleva tu Arte 3D al Siguiente Nivel con la Magia de la IA</strong></h2><p>¿Imaginas crear mundos tridimensionales completos, personajes de otro mundo y animaciones fluidas en una fracción del tiempo tradicional? Con nuestro taller de IA aplicada al 3D, ese futuro es ahora.</p><h3><strong>Descubre el Poder de la IA en el Mundo 3D</strong></h3><p>Aprende a utilizar herramientas revolucionarias como:</p><ul><li><p><strong>AI-powered Modeling</strong>: Genera modelos 3D complejos con simples descripciones.</p></li><li><p><strong>Neural Rendering</strong>: Crea texturas fotorrealistas en segundos.</p></li><li><p><strong>Smart Rigging</strong>: Anima personajes de forma natural sin ser un experto.</p></li></ul><h3><strong>¿Por Qué No Puedes Perderte Este Taller?</strong></h3><ul><li><p><strong>Exclusividad</strong>: Solo aceptamos 7 participantes para garantizar atención personalizada.</p></li><li><p><strong>Herramientas Gratuitas: </strong>Te brindamos acceso a herramientas de uso abierto o gratuito.</p></li><li><p><strong>Innovación</strong>: Sé de los primeros en dominar las técnicas que definirán el futuro del 3D.</p></li></ul><h3><strong>Lo Que Aprenderás:</strong></h3><ol><li><p>Crea modelos 3D complejos en cuestión de minutos, no de días.</p></li><li><p>Anima personajes de forma realista sin ser un experto en rigging.</p></li><li><p>Acelera el proceso de fotogrametría: pasa de un video a una escena 3D</p></li><li><p>Optimiza tu flujo de trabajo 3D para producir contenido de alta calidad en tiempo récord.</p></li></ol><h3><strong>Nuestra Promesa</strong></h3><p>Si al finalizar el taller no has aprendido algo de valor para tu práctica profesional, te devolvemos tu dinero.</p>",
+      "horario": "<h1>Fechas</h1><p>Miércoles 31 julio, 7 y 14 agosto</p><h1>Hora</h1><p> 6 a 8pm - Hora Costa Rica</p>",
+      "link": "https://tally.so/r/wL0b6p"
+    },
+    {
       "tituloTaller": "Fantasía Digital(IA): Conjuros Creadores",
       "id": "fdprompt",
       "imgcover": {
@@ -10,6 +24,7 @@
         "height": 800,
         "width": 800
       },
+      "link": "https://tally.so/r/n0PxAy",
       "year": "2024",
       "description": "<h1>Domina el Arte de Comunicarte con la IA y Desbloquea su Verdadero Potencial</h1><p> </p><p>¿Te has preguntado alguna vez cómo algunos artistas y profesionales de otras áreas logran resultados asombrosos con IA mientras otros luchan por obtener algo decente? La respuesta está en el prompting, y estamos aquí para convertirte en maestrx.</p><h1></h1><h1>Descubre los Secretos del Prompting Avanzado</h1><p> </p><p>En este taller intensivo, aprenderás a:</p><ul><li><p>Crear prompts que generen exactamente lo que imaginas.</p></li><li><p>Utilizar técnicas avanzadas de \"chain-of-thought\" para resultados complejos.</p></li><li><p>Dominar el arte del \"prompt engineering\" para múltiples plataformas de IA.</p></li></ul><p> </p><h1> </h1><h1>¿Por Qué Este Taller es Imprescindible?</h1><p> </p><ul><li><p><strong>Urgencia</strong>: Las plazas se están agotando rápidamente. ¡No pierdas esta oportunidad única!</p></li><li><p><strong>Exclusividad</strong>: Aprende técnicas secretas utilizadas por aquellas personas que sacan el mejor provecho de la IA.</p></li><li><p><strong>Transformación</strong>: Sube de nivel en tiempo récord.</p></li></ul><h1> </h1><h1>Lo Que Conseguirás:</h1><p> </p><ol><li><p>Multiplica tu productividad creativa por 10.</p></li><li><p>Consigue resultados asombrosos en todas las plataformas de IA.</p></li><li><p>Destaca con prompts que nadie más conoce.</p></li><li><p>Desarrolla tu propio estilo de prompting para resultados únicos y personalizados.</p></li></ol><h1>  </h1><h1>Garantía de Satisfacción</h1><p> </p><p>Si no aprendes al menos 5 técnicas de prompting que revolucionen tu flujo de trabajo, te devolvemos tu dinero. Sin preguntas.</p><h1> </h1><h1>¡No Dejes que tus Ideas se Queden Atrapadas en tu Mente!</h1><p> </p><p>Este es el momento de dar el salto y convertirte en unx verdaderx magx de la IA.</p>",
       "horario": "<h1>Fechas y Horario</h1><p><br>Lunes 22 y 29 de julio - 6 a 8pm - Hora Costa Rica</p>"
@@ -25,7 +40,7 @@
         "width": 800
       },
       "img1": "https://sinestesialab.xyz/dir360.webp",
-      "link": "https://tienda.sinestesialab.xyz/buy/06a570bc-5f97-41be-92dd-9b226c860cd4?embed=1",
+      "link": "https://tienda.sinestesialab.xyz/buy/06a570bc-5f97-41be-92dd-9b226c860cd4",
       "embed": [
         {
           "video": "https://www.youtube.com/embed/fcDX8jRnz8c"
