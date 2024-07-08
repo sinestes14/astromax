@@ -1,6 +1,20 @@
 {
   "talleres": [
     {
+      "tituloTaller": "Fantasía Digital(IA): Multiverso Imagen",
+      "id": "fdimg",
+      "imgcover": {
+        "provider": "uploadcare",
+        "type": "image",
+        "id": "b9aa5769-2dbf-4a4d-88ca-0079f18609b7",
+        "height": 800,
+        "width": 800
+      },
+      "description": "<h1><strong>Despierta la Creatividad que Llevas Dentro</strong></h1><p>¿Alguna vez has soñado con crear mundos enteros con solo el poder de tu imaginación? Con nuestro taller \"Multiverso Imagen\", ese sueño está a punto de convertirse en realidad.</p><h1><strong>Descubre el Poder de la IA en Tus Manos</strong></h1><p>Sumérgete en el fascinante mundo de la inteligencia artificial aplicada a la generación de imágenes. Aprende a dominar herramientas revolucionarias como:</p><ul><li><p><strong>Stable Diffusion</strong>: Crea imágenes sorprendentes a partir de descripciones textuales.</p></li><li><p><strong>Control Net</strong>: Lleva tus ediciones al siguiente nivel con control preciso sobre cada detalle.</p></li></ul><h1><strong>¿Por Qué No Puedes Perderte Este Taller?</strong></h1><ul><li><p><strong>Exclusividad</strong>: Solo 7 plazas disponibles. ¡No te quedes fuera!</p></li><li><p><strong>Herramientas Gratuitas: </strong>Te brindamos acceso a herramientas de uso abierto o gratuito.</p></li><li><p><strong>Transformación</strong>: Pasa de novatx a master en tiempo récord.</p></li></ul><h3><strong>Lo Que Lograrás:</strong></h3><ol><li><p>Crea arte que eleve tu nivel.</p></li><li><p>Ahorra horas de trabajo con edición asistida por IA.</p></li><li><p>Acelera tus procesos de sketching.</p></li><li><p>Domina técnicas de élite.</p></li></ol><h3></h3><h3><strong>Nuestra Promesa</strong></h3><p>Si al finalizar el taller no has aprendido algo de valor para tu práctica profesional, te devolvemos tu dinero.</p>",
+      "horario": "<h1>Fechas</h1><p>Viernes 16, 23 y 30 de Agosto </p><h1>Horas</h1><p>6 a 8 pm - Hora Costa Rica</p>",
+      "link": "https://tally.so/r/nrE6pl"
+    },
+    {
       "tituloTaller": "Fantasía Digital(IA): Animaciones, Profundidades y Cuerpos Sintéticos",
       "id": "fd3d",
       "imgcover": {
@@ -10,9 +24,9 @@
         "height": 800,
         "width": 800
       },
+      "link": "https://tally.so/r/wL0b6p",
       "description": "<h1><strong>Lleva tu Arte 3D al Siguiente Nivel con la Magia de la IA</strong></h1><p>¿Imaginas crear mundos tridimensionales completos, personajes de otro mundo y animaciones fluidas en una fracción del tiempo tradicional? Con nuestro taller de IA aplicada al 3D, ese futuro es ahora.</p><h1><strong>Descubre el Poder de la IA en el Mundo 3D</strong></h1><p>Aprende a utilizar herramientas revolucionarias como:</p><ul><li><p><strong>AI-powered Modeling</strong>: Genera modelos 3D complejos con simples descripciones.</p></li><li><p><strong>Neural Rendering</strong>: Crea texturas fotorrealistas en segundos.</p></li><li><p><strong>Smart Rigging</strong>: Anima personajes de forma natural sin ser un experto.</p></li></ul><h1><strong>¿Por Qué No Puedes Perderte Este Taller?</strong></h1><ul><li><p><strong>Exclusividad</strong>: Solo aceptamos 7 participantes para garantizar atención personalizada.</p></li><li><p><strong>Herramientas Gratuitas: </strong>Te brindamos acceso a herramientas de uso abierto o gratuito.</p></li><li><p><strong>Innovación</strong>: Sé de los primeros en dominar las técnicas que definirán el futuro del 3D.</p></li></ul><h1><strong>Lo Que Aprenderás:</strong></h1><ol><li><p>Crea modelos 3D complejos en cuestión de minutos, no de días.</p></li><li><p>Anima personajes de forma realista sin ser un experto en rigging.</p></li><li><p>Acelera el proceso de fotogrametría: pasa de un video a una escena 3D</p></li><li><p>Optimiza tu flujo de trabajo 3D para producir contenido de alta calidad en tiempo récord.</p></li></ol><h1><strong>Nuestra Promesa</strong></h1><p>Si al finalizar el taller no has aprendido algo de valor para tu práctica profesional, te devolvemos tu dinero.</p>",
-      "horario": "<h1>Fechas</h1><p>Miércoles 31 julio, 7 y 14 agosto</p><h1>Hora</h1><p> 6 a 8pm - Hora Costa Rica</p>",
-      "link": "https://tally.so/r/wL0b6p"
+      "horario": "<h1>Fechas</h1><p>Miércoles 31 julio, 7 y 14 agosto</p><h1>Hora</h1><p> 6 a 8pm - Hora Costa Rica</p>"
     },
     {
       "tituloTaller": "Fantasía Digital(IA): Conjuros Creadores",
