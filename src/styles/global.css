@@ -20,6 +20,10 @@ background-image: radial-gradient(circle at center center, transparent 0%,rgba(2
   visibility: hidden;
 }*/
 
+.splide__arrow {
+	background:white;
+}
+
 body {
   background:black;
   font-family: "Poppins", sans-serif;
